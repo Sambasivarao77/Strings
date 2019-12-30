@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+
+int main()
+{
+    //empty vector of strings and add values
+    std::vector<std::string> vect;
+    vect.push_back("Samba1");
+    vect.push_back("Samba2");
+    for(auto elem:vect)
+        std::cout<<elem<<" ";
+        
+    // vector with fixed and default values as Samba
+    std::vector<std::string> strVect{10,"Samba"};
+    std::cout<<"\n capacity = "<<strVect.capacity()<<" and size = "<<strVect.size()<<"\n";
+    for(auto elem:strVect)
+        std::cout<<" "<<elem;
+        
+    return 0;
+}
+
+
+output:
+Samba1 Samba2                                                                                                                                  
+ capacity = 10 and size = 10                                                                                                                   
+ Samba Samba Samba Samba Samba Samba Samba Samba Samba Samba
