@@ -1,0 +1,39 @@
+//append two strings and split strings
+#include<bits/stdc++.h>
+int main()
+{
+    std::string str1 = "First ";
+    std::string str2 = "Second ";
+        
+    //append
+    str1 = str2+str1;
+    std::cout<<str1;
+    
+    //insert
+    str1.insert(1," Testing ");
+    std::cout<<"\n"<<str1;
+
+    //substr
+    std::string subb = str1.substr(1,9);
+    std::cout<<"\nsub string starting from 1 and length 9 ="<<subb;
+    
+    //find
+    size_t found = str1.find("siva");
+    if(found != std::string::npos)
+        std::cout<<"\nfirst occurance found at "<<found;
+    //count
+    int count = 0;
+    count = std::count(str1.begin(),str1.end(),'s');
+    std::cout<<"\ncount of s = "<<count;
+    
+    //sort 
+    sort(str1.begin(),str1.end());
+    std::cout<<str1;
+    return 0;
+}
+
+output:
+Second First                                                                                                          
+S Testing econd First                                                                                                 
+sub string starting from 1 and length 9 = Testing                                                                     
+count of s = 2    FSTcdeegiinnorsstt
